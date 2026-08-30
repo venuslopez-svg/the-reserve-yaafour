@@ -49,6 +49,18 @@ const translations = {
         discover:
             "Discover",
 
+/* VISION */
+
+visionKicker:
+    "OUR VISION",
+
+visionTitle:
+    "A private residential experience shaped around timeless living.",
+
+visionBody:
+    "The Reserve is conceived as a refined residential destination where architecture, privacy and landscape come together in harmony. Every detail is considered to create an elevated way of living in Yaafour.",
+
+
 
         /* PROJECT */
 
@@ -485,6 +497,19 @@ const translations = {
 
         discover:
             "اكتشف",
+
+/* VISION */
+
+visionKicker:
+    "رؤيتنا",
+
+visionTitle:
+    "تجربة سكنية خاصة صُممت لحياة راقية تدوم.",
+
+visionBody:
+    "تم تصميم ذا ريزيرف ليكون وجهة سكنية راقية، تتناغم فيها العمارة والخصوصية والطبيعة في تجربة متكاملة. وقد رُوعي كل تفصيل بعناية لتقديم أسلوب حياة استثنائي في يعفور.",
+
+
 
 
         /* PROJECT */
