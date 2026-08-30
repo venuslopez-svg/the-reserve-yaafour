@@ -1,0 +1,2216 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color"
+          content="#07182d">
+
+    <meta name="description"
+          content="The Reserve Yaafour — exclusive luxury villas near Damascus, Syria.">
+
+    <title>
+        The Reserve Yaafour | Exclusive Luxury Villas
+    </title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- MAIN CSS -->
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+
+    <!-- ====================================================
+         HERO FIX
+         This overrides old hero CSS from styles.css
+         ==================================================== -->
+
+    <style>
+
+        /* ===============================
+           HERO CONTAINER
+           =============================== */
+
+        #home.hero {
+
+            position: relative !important;
+
+            width: 100% !important;
+
+            height: 100vh !important;
+
+            min-height: 780px !important;
+
+            overflow: hidden !important;
+
+            background: #031327 !important;
+
+            display: flex !important;
+
+            align-items: flex-end !important;
+
+        }
+
+
+        /* ===============================
+           HERO IMAGE
+           =============================== */
+
+     #home .hero-bg {
+    position: absolute !important;
+
+    top: 74px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+
+    height: 220px !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 0 !important;
+}
+
+
+        /* ===============================
+           CINEMATIC DARK OVERLAY
+           =============================== */
+
+        #home .hero-overlay {
+
+            position: absolute !important;
+
+            inset: 0 !important;
+
+            z-index: 1 !important;
+
+            pointer-events: none !important;
+
+            background:
+
+                linear-gradient(
+
+                    to top,
+
+                    rgba(3, 14, 29, 0.98) 0%,
+
+                    rgba(3, 14, 29, 0.93) 18%,
+
+                    rgba(3, 14, 29, 0.60) 31%,
+
+                    rgba(3, 14, 29, 0.18) 47%,
+
+                    rgba(3, 14, 29, 0.06) 65%,
+
+                    rgba(3, 14, 29, 0.03) 100%
+
+                ) !important;
+
+        }
+
+
+        /* ===============================
+           HERO CONTENT
+           =============================== */
+
+     .hero-content,
+html[dir="rtl"] .hero-content {
+    position: absolute !important;
+
+    top: 315px !important;
+    left: 0 !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 25px 32px 40px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+
+        /* ===============================
+           SMALL GOLD LABEL
+           =============================== */
+
+        #home .eyebrow {
+
+            margin: 0 0 13px !important;
+
+            padding: 0 !important;
+
+            color: #d8b34d !important;
+
+            font-family: Inter, sans-serif !important;
+
+            font-size: 11px !important;
+
+            font-weight: 600 !important;
+
+            letter-spacing: 0.24em !important;
+
+            text-transform: uppercase !important;
+
+        }
+
+
+        /* ===============================
+           MAIN TITLE
+           =============================== */
+
+        #home h1 {
+
+            margin: 0 0 22px !important;
+
+            padding: 0 !important;
+
+            max-width: 780px !important;
+
+            font-family:
+                "Cormorant Garamond",
+                serif !important;
+
+            font-size:
+                clamp(
+                    64px,
+                    5.3vw,
+                    96px
+                ) !important;
+
+            line-height: 0.90 !important;
+
+            letter-spacing: -0.03em !important;
+
+            font-weight: 500 !important;
+
+            color: white !important;
+
+        }
+
+
+        #home h1 span {
+
+            display: block !important;
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            line-height: 0.90 !important;
+
+            color: white !important;
+
+        }
+
+
+        /* remove old BR gap */
+
+        #home h1 br {
+
+            display: none !important;
+
+        }
+
+
+        #home h1 em {
+
+            display: block !important;
+
+            margin: 4px 0 0 !important;
+
+            padding: 0 !important;
+
+            line-height: 0.90 !important;
+
+            color: #d8ad48 !important;
+
+            font-style: italic !important;
+
+            font-weight: 500 !important;
+
+        }
+
+
+        /* ===============================
+           HERO DESCRIPTION
+           =============================== */
+
+        #home .hero-lead {
+
+            max-width: 550px !important;
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.83
+                ) !important;
+
+            font-family:
+                Inter,
+                sans-serif !important;
+
+            font-size: 15px !important;
+
+            line-height: 1.75 !important;
+
+        }
+
+
+        /* ===============================
+           BUTTONS
+           =============================== */
+
+        #home .cta-row {
+
+            display: flex !important;
+
+            gap: 14px !important;
+
+            flex-wrap: wrap !important;
+
+            margin: 28px 0 0 !important;
+
+            padding: 0 !important;
+
+        }
+
+
+        #home .btn {
+
+            min-height: 50px !important;
+
+            padding:
+                0
+                24px !important;
+
+            display:
+                inline-flex !important;
+
+            align-items:
+                center !important;
+
+            justify-content:
+                center !important;
+
+            font-family:
+                Inter,
+                sans-serif !important;
+
+            font-size: 11px !important;
+
+            font-weight: 600 !important;
+
+            letter-spacing:
+                0.10em !important;
+
+            text-transform:
+                uppercase !important;
+
+        }
+
+
+        #home .btn-gold {
+
+            background:
+                #d9b44d !important;
+
+            border:
+                1px solid
+                #d9b44d !important;
+
+            color:
+                #041225 !important;
+
+        }
+
+
+        #home .btn-ghost {
+
+            background:
+                rgba(
+                    3,
+                    14,
+                    29,
+                    0.22
+                ) !important;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.40
+                ) !important;
+
+            color:
+                white !important;
+
+        }
+
+
+        /* ===============================
+           DISCOVER
+           =============================== */
+
+        #home .scroll-cue {
+
+            position:
+                absolute !important;
+
+            right:
+                5vw !important;
+
+            bottom:
+                5vh !important;
+
+            left:
+                auto !important;
+
+            z-index:
+                3 !important;
+
+            display:
+                flex !important;
+
+            align-items:
+                center !important;
+
+            gap:
+                14px !important;
+
+            color:
+                white !important;
+
+            font-size:
+                10px !important;
+
+            letter-spacing:
+                0.18em !important;
+
+            text-transform:
+                uppercase !important;
+
+        }
+
+
+        #home .scroll-cue i {
+
+            width:
+                42px !important;
+
+            height:
+                1px !important;
+
+            background:
+                #d8ad48 !important;
+
+        }
+
+
+        /* ===============================
+           ARABIC HERO
+           =============================== */
+
+        html[dir="rtl"]
+        #home .hero-content {
+
+            margin:
+
+                0
+
+                4.8vw
+
+                5.5vh
+
+                0 !important;
+
+            text-align:
+                right !important;
+
+        }
+
+
+        html[dir="rtl"]
+        #home .scroll-cue {
+
+            right:
+                auto !important;
+
+            left:
+                5vw !important;
+
+        }
+
+
+       /* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 700px) {
+
+    /* HERO */
+    #home.hero {
+        min-height: 720px !important;
+        height: 720px !important;
+        overflow: hidden !important;
+    }
+
+
+    /* HERO IMAGE */
+    #home .hero-bg {
+        position: absolute !important;
+
+        top: 74px !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+
+        height: 220px !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+
+        transform: none !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        z-index: 0 !important;
+    }
+
+
+    /* HERO CONTENT */
+    #home .hero-content,
+    html[dir="rtl"] #home .hero-content {
+
+        position: absolute !important;
+
+        top: 315px !important;
+        left: 0 !important;
+        bottom: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding:
+            25px
+            32px
+            40px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* HERO TITLE */
+    #home h1 {
+        font-size: 42px !important;
+        line-height: 0.98 !important;
+    }
+
+
+    /* DESCRIPTION */
+    #home .hero-lead {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+    }
+
+
+    /* BUTTONS */
+    #home .cta-row {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+
+    /* HIDE SCROLL INDICATOR */
+    #home .scroll-cue {
+        display: none !important;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ======================================================
+     HEADER
+     ====================================================== -->
+
+<header class="site-header" id="top">
+
+    <a
+        class="brand"
+        href="#home"
+        aria-label="The Reserve home"
+    >
+
+        <span class="brand-mark">
+            R
+        </span>
+
+        <span class="brand-copy">
+
+            <strong data-i18n="brand">
+                THE RESERVE
+            </strong>
+
+            <small data-i18n="locationName">
+                YAAFOUR
+            </small>
+
+        </span>
+
+    </a>
+
+
+    <nav
+        class="desktop-nav"
+        aria-label="Primary"
+    >
+
+        <a
+            href="#project"
+            data-i18n="navProject"
+        >
+            Project
+        </a>
+
+
+        <a
+            href="#residences"
+            data-i18n="navResidences"
+        >
+            Residences
+        </a>
+
+
+        <a
+            href="#plans"
+            data-i18n="navPlans"
+        >
+            Floor Plans
+        </a>
+
+
+        <a
+            href="#gallery"
+            data-i18n="navGallery"
+        >
+            Gallery
+        </a>
+
+
+        <a
+            href="#updates"
+            data-i18n="navUpdates"
+        >
+            Site Updates
+        </a>
+
+
+        <a
+            href="#contact"
+            data-i18n="navContact"
+        >
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <button
+            class="lang-switch"
+            type="button"
+            id="langSwitch"
+            aria-label="Switch language"
+        >
+            عربي
+        </button>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+        >
+
+            <span></span>
+
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ======================================================
+     MOBILE MENU
+     ====================================================== -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <a
+        href="#project"
+        data-i18n="navProject"
+    >
+        Project
+    </a>
+
+
+    <a
+        href="#residences"
+        data-i18n="navResidences"
+    >
+        Residences
+    </a>
+
+
+    <a
+        href="#plans"
+        data-i18n="navPlans"
+    >
+        Floor Plans
+    </a>
+
+
+    <a
+        href="#gallery"
+        data-i18n="navGallery"
+    >
+        Gallery
+    </a>
+
+
+    <a
+        href="#updates"
+        data-i18n="navUpdates"
+    >
+        Site Updates
+    </a>
+
+
+    <a
+        href="#contact"
+        data-i18n="navContact"
+    >
+        Contact
+    </a>
+
+</div>
+
+
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <!-- ENTRANCE PHOTO -->
+
+    <img
+        class="hero-bg"
+        src="./assets/entrance-hero.jpg"
+        alt="The Reserve Yaafour entrance"
+    >
+
+
+    <!-- DARK OVERLAY -->
+
+    <div class="hero-overlay"></div>
+
+
+    <!-- HERO TEXT -->
+
+    <div class="hero-content">
+
+
+        <p
+            class="eyebrow"
+            data-i18n="heroEyebrow"
+        >
+            EXCLUSIVE LUXURY VILLAS · YAAFOUR
+        </p>
+
+
+        <h1>
+
+            <span data-i18n="heroTitle1">
+                Crafted for the few.
+            </span>
+
+            <em data-i18n="heroTitle2">
+                Designed for life.
+            </em>
+
+        </h1>
+
+
+        <p
+            class="hero-lead"
+            data-i18n="heroLead"
+        >
+            A limited collection of two signature villas
+            created around privacy, timeless architecture
+            and exceptional quality.
+        </p>
+
+
+        <div class="cta-row">
+
+
+            <a
+                class="btn btn-gold"
+                href="#residences"
+                data-i18n="explore"
+            >
+                Explore the villas
+            </a>
+
+
+          <a
+    class="btn btn-ghost brochure-download"
+    href="Reserve-Villa-Brochure.pdf"
+    download
+    data-i18n="download"
+>
+    Download brochure
+</a>
+
+
+        </div>
+
+    </div>
+
+
+    <a
+        class="scroll-cue"
+        href="#project"
+    >
+
+        <span data-i18n="discover">
+            Discover
+        </span>
+
+        <i></i>
+
+    </a>
+
+
+</section>
+
+
+
+<!-- ======================================================
+     PROJECT INTRO
+     ====================================================== -->
+
+<section
+    class="intro section"
+    id="project"
+>
+
+    <div
+        class="section-kicker"
+        data-i18n="projectKicker"
+    >
+        THE PROJECT
+    </div>
+
+
+    <div class="intro-grid">
+
+
+        <div class="reveal">
+
+            <h2 data-i18n="projectTitle">
+                A private sanctuary just beyond the city.
+            </h2>
+
+        </div>
+
+
+        <div class="intro-copy reveal">
+
+            <p data-i18n="projectBody">
+                Designed for modern living, each villa combines
+                timeless architecture, spacious interiors and
+                natural elegance to offer comfort, privacy and
+                lasting value.
+            </p>
+
+
+            <div class="stats">
+
+
+                <div>
+
+                    <strong>
+                        2
+                    </strong>
+
+                    <span data-i18n="statVillas">
+                        Signature Villas
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        2,400 m²
+                    </strong>
+
+                    <span data-i18n="statLand">
+                        Total Land per Estate
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        1,100 m²
+                    </strong>
+
+                    <span data-i18n="statBuilt">
+                        Built Area
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        60 m²
+                    </strong>
+
+                    <span data-i18n="statPool">
+                        Private Pool
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     LOCATION
+     ====================================================== -->
+
+<section
+    class="location-section section"
+    id="location"
+>
+
+
+    <div class="location-content reveal">
+
+
+        <p
+            class="section-kicker"
+            data-i18n="locationKicker"
+        >
+            LOCATION
+        </p>
+
+
+        <h2 data-i18n="locationTitle">
+            Yaafour, moments from Damascus.
+        </h2>
+
+
+        <p
+            class="location-description"
+            data-i18n="locationBody"
+        >
+            A sophisticated haven designed for absolute
+            privacy, with convenient access to the city
+            and key routes.
+        </p>
+
+
+        <div class="location-times">
+
+
+            <div class="location-time">
+
+                <strong>
+                    15
+                </strong>
+
+                <div>
+
+                    <span data-i18n="minutes">
+                        minutes
+                    </span>
+
+                    <p data-i18n="cityCenter">
+                        Damascus City Center
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="location-time">
+
+                <strong>
+                    5
+                </strong>
+
+                <div>
+
+                    <span data-i18n="minutes">
+                        minutes
+                    </span>
+
+                    <p data-i18n="beirutHighway">
+                        Beirut Highway
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="location-time">
+
+                <strong>
+                    20
+                </strong>
+
+                <div>
+
+                    <span data-i18n="minutes">
+                        minutes
+                    </span>
+
+                    <p data-i18n="airport">
+                        International Airport
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <a
+            class="location-map-link"
+            href="https://maps.app.goo.gl/ZxqjRAgMkdZTxzHP7?g_st=iw"
+            target="_blank"
+            rel="noopener"
+            data-i18n="mapLink"
+        >
+            View location on Google Maps →
+        </a>
+
+
+    </div>
+
+
+
+    <div class="location-map reveal">
+
+        <img
+            src="./assets/location-map.jpg"
+            alt="The Reserve Yaafour location map"
+        >
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ======================================================
+     ARCHITECTURE
+     ====================================================== -->
+
+<section class="architecture-section" id="residences">
+
+    <div class="architecture-image reveal">
+
+        <img
+            src="./assets/architecture-web.jpg"
+            alt="The Reserve Yaafour architecture"
+        >
+
+    </div>
+
+
+    <div class="architecture-content reveal">
+
+        <p
+            class="section-kicker"
+            data-i18n="architectureKicker"
+        >
+            ARCHITECTURE
+        </p>
+
+        <h2 data-i18n="architectureTitle">
+            Contemporary by nature.
+            Timeless by design.
+        </h2>
+
+        <p
+            class="architecture-description"
+            data-i18n="architectureBody"
+        >
+            A refined composition of natural materials,
+            crafted details and generous open spaces
+            that connect the home to its surrounding landscape.
+        </p>
+
+
+        <div class="architecture-features">
+
+            <div data-i18n="featurePrivacy">
+                Privacy without compromise
+            </div>
+
+            <div data-i18n="featureSpace">
+                Space without limit
+            </div>
+
+            <div data-i18n="featureNature">
+                Nature as part of life
+            </div>
+
+            <div data-i18n="featureQuality">
+                Quality in every detail
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================================
+     LIFESTYLE
+     ====================================================== -->
+
+<section class="lifestyle-new section">
+
+    <div class="section-heading reveal">
+
+        <p
+            class="section-kicker"
+            data-i18n="lifestyleKicker"
+        >
+            LIFESTYLE
+        </p>
+
+        <h2 data-i18n="lifestyleTitle">
+            Spaces made for living beautifully.
+        </h2>
+
+    </div>
+
+
+    <div class="lifestyle-feature reveal">
+
+        <div class="lifestyle-feature-image">
+
+            <img
+                src="./assets/outdoor-web.jpg"
+                alt="Outdoor living at The Reserve Yaafour"
+            >
+
+        </div>
+
+
+        <div class="lifestyle-feature-copy">
+
+            <span>01</span>
+
+            <h3 data-i18n="outdoorTitle">
+                Outdoor Living
+            </h3>
+
+            <p data-i18n="outdoorBody">
+                Outdoor lounge, dining pavilion,
+                swimming pool and outdoor kitchen
+                designed for effortless entertaining.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="lifestyle-grid">
+
+
+        <article class="lifestyle-card reveal">
+
+            <div class="lifestyle-card-image">
+
+                <img
+                    src="./assets/living-web.jpg"
+                    alt="Formal living room"
+                >
+
+            </div>
+
+            <div class="lifestyle-card-copy">
+
+                <span>02</span>
+
+                <h3 data-i18n="livingTitle">
+                    Formal Living
+                </h3>
+
+                <p data-i18n="livingBody">
+                    Refined finishes and a warm atmosphere
+                    created for elegant gatherings and relaxation.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="lifestyle-card reveal">
+
+            <div class="lifestyle-card-image">
+
+                <img
+                    src="./assets/majlis-web.jpg"
+                    alt="Private Majlis"
+                >
+
+            </div>
+
+            <div class="lifestyle-card-copy">
+
+                <span>03</span>
+
+                <h3 data-i18n="majlisTitle">
+                    Private Majlis
+                </h3>
+
+                <p data-i18n="majlisBody">
+                    A sophisticated gathering space balancing
+                    hospitality, comfort and contemporary luxury.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="lifestyle-card reveal">
+
+            <div class="lifestyle-card-image">
+
+                <img
+                    src="./assets/dining-web.jpg"
+                    alt="Dining and show kitchen"
+                >
+
+            </div>
+
+            <div class="lifestyle-card-copy">
+
+                <span>04</span>
+
+                <h3 data-i18n="diningTitle">
+                    Dining &amp; Show Kitchen
+                </h3>
+
+                <p data-i18n="diningBody">
+                    A refined setting for daily dining,
+                    entertaining and family gatherings.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="lifestyle-card reveal">
+
+            <div class="lifestyle-card-image">
+
+                <img
+                    src="./assets/bedroom-web.jpg"
+                    alt="Luxury bedroom"
+                >
+
+            </div>
+
+            <div class="lifestyle-card-copy">
+
+                <span>05</span>
+
+                <h3 data-i18n="bedroomTitle">
+                    Private Bedrooms
+                </h3>
+
+                <p data-i18n="bedroomBody">
+                    Calm, elegant private retreats designed
+                    around comfort, privacy and natural light.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="lifestyle-card reveal">
+
+            <div class="lifestyle-card-image">
+
+                <img
+                    src="./assets/dirty-kitchen-web.jpg"
+                    alt="Preparation kitchen"
+                >
+
+            </div>
+
+            <div class="lifestyle-card-copy">
+
+                <span>06</span>
+
+                <h3 data-i18n="prepKitchenTitle">
+                    Preparation Kitchen
+                </h3>
+
+                <p data-i18n="prepKitchenBody">
+                    A practical secondary kitchen designed
+                    for preparation, storage and everyday use.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="lifestyle-card reveal">
+
+            <div class="lifestyle-card-image">
+
+                <img
+                    src="./assets/pool.jpg"
+                    alt="Private swimming pool"
+                >
+
+            </div>
+
+            <div class="lifestyle-card-copy">
+
+                <span>07</span>
+
+                <h3 data-i18n="poolTitle">
+                    Private Pool
+                </h3>
+
+                <p data-i18n="poolBody">
+                    A private pool framed by landscaped outdoor
+                    areas for relaxation and entertaining.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     VILLA SPECIFICATIONS
+     ====================================================== -->
+
+<section class="villa-specs section">
+
+    <div class="villa-specs-image reveal">
+
+        <img
+            src="./assets/pool-web.jpg"
+            alt="Private swimming pool at The Reserve Yaafour"
+        >
+
+    </div>
+
+
+    <div class="villa-specs-content reveal">
+
+        <p
+            class="section-kicker"
+            data-i18n="specKicker"
+        >
+            VILLA SPECIFICATION
+        </p>
+
+
+        <h2 data-i18n="specTitle">
+            Designed generously,
+            down to every detail.
+        </h2>
+
+
+        <p class="villa-specs-intro" data-i18n="specIntro">
+            Each villa is designed around generous living spaces,
+            privacy and everyday comfort, with dedicated areas for
+            family life, guests and service functions.
+        </p>
+
+
+        <div class="villa-specs-grid">
+
+            <div class="spec-item">
+                <strong>6</strong>
+                <span data-i18n="bedrooms">Bedrooms</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>3</strong>
+                <span data-i18n="halls">Halls</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>3</strong>
+                <span data-i18n="parking">Garage Parking</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>1</strong>
+                <span data-i18n="majlis">External Majlis</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>2</strong>
+                <span data-i18n="maids">Maid's Rooms</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>2</strong>
+                <span data-i18n="guards">Guard's Rooms</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>1</strong>
+                <span data-i18n="driver">Driver's Room</span>
+            </div>
+
+            <div class="spec-item">
+                <strong>1</strong>
+                <span data-i18n="basementHall">
+                    Multi-purpose Basement Hall
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     FLOOR PLANS
+     ====================================================== -->
+
+<section class="floorplans-section section" id="plans">
+
+    <div class="floorplans-heading reveal">
+
+        <p class="section-kicker" data-i18n="plansKicker">
+            FLOOR PLANS
+        </p>
+
+        <h2 data-i18n="plansTitle">
+            Explore the residence.
+        </h2>
+
+        <p class="floorplans-intro" data-i18n="plansIntro">
+            Discover the layout of each level and the overall relationship
+            between the villa, landscape and private outdoor spaces.
+        </p>
+
+    </div>
+
+
+    <div class="floorplans-tabs reveal">
+
+        <button
+            class="floorplan-tab active"
+            type="button"
+            data-plan-image="./assets/masterplan-web.jpg"
+            data-plan-key="masterPlan"
+        >
+            <span data-i18n="masterPlan">Master Plan</span>
+        </button>
+
+        <button
+            class="floorplan-tab"
+            type="button"
+            data-plan-image="./assets/ground_floor.jpg"
+            data-plan-key="groundFloor"
+        >
+            <span data-i18n="groundFloor">Ground Floor</span>
+        </button>
+
+        <button
+            class="floorplan-tab"
+            type="button"
+            data-plan-image="./assets/first_floor.jpg"
+            data-plan-key="firstFloor"
+        >
+            <span data-i18n="firstFloor">First Floor</span>
+        </button>
+
+        <button
+            class="floorplan-tab"
+            type="button"
+            data-plan-image="./assets/basement.jpg"
+            data-plan-key="basement"
+        >
+            <span data-i18n="basement">Basement</span>
+        </button>
+
+    </div>
+
+
+    <div class="floorplans-viewer reveal">
+
+        <div class="floorplans-image-wrap">
+
+            <img
+                id="floorplanImage"
+                src="./assets/masterplan-web.jpg"
+                alt="Master Plan"
+            >
+
+        </div>
+
+
+        <div class="floorplans-caption">
+
+            <span data-i18n="planLabel">PLAN</span>
+
+            <h3 id="floorplanTitle" data-plan-key="masterPlan">
+                Master Plan
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================================
+     FACILITIES & TECHNOLOGY
+     ====================================================== -->
+
+<section class="facilities-reference" id="facilities">
+
+    <img
+        id="facilitiesImage"
+        src="./assets/facilities-full.jpg"
+        data-en-src="./assets/facilities-full.jpg"
+        data-ar-src="./assets/facilities-full-ar.jpg"
+        alt="Facilities and Technology at The Reserve Yaafour"
+    >
+
+</section>
+
+
+<!-- ======================================================
+     GALLERY
+     ====================================================== -->
+
+<section class="gallery-new section" id="gallery">
+
+    <div class="gallery-heading reveal">
+
+        <p class="section-kicker" data-i18n="galleryKicker">
+            GALLERY
+        </p>
+
+        <h2 data-i18n="galleryTitle">
+            Explore the interiors.
+        </h2>
+
+        <p class="gallery-intro" data-i18n="galleryIntro">
+            A closer look at the living spaces, dining areas,
+            majlis and private bedrooms of The Reserve.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-filters reveal">
+
+        <button class="gallery-filter active" data-filter="all" type="button" data-i18n="filterAll">
+            All
+        </button>
+
+        <button class="gallery-filter" data-filter="living" type="button" data-i18n="filterLiving">
+            Living
+        </button>
+
+        <button class="gallery-filter" data-filter="dining" type="button" data-i18n="filterDining">
+            Dining &amp; Kitchen
+        </button>
+
+        <button class="gallery-filter" data-filter="majlis" type="button" data-i18n="filterMajlis">
+            Majlis
+        </button>
+
+        <button class="gallery-filter" data-filter="bedroom" type="button" data-i18n="filterBedrooms">
+            Bedrooms
+        </button>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+
+        <!-- LIVING -->
+
+        <button class="gallery-item gallery-large"
+                data-category="living"
+                type="button">
+            <img src="./assets/living-01.png" alt="Living room">
+        </button>
+
+        <button class="gallery-item"
+                data-category="living"
+                type="button">
+            <img src="./assets/living-02.png" alt="Living room">
+        </button>
+
+        <button class="gallery-item"
+                data-category="living"
+                type="button">
+            <img src="./assets/formal-living-01.png" alt="Formal living room">
+        </button>
+
+
+        <!-- DINING & KITCHEN -->
+
+        <button class="gallery-item"
+                data-category="dining"
+                type="button">
+            <img src="./assets/dining-room.png" alt="Dining room">
+        </button>
+
+        <button class="gallery-item"
+                data-category="dining"
+                type="button">
+            <img src="./assets/show-kitchen.png" alt="Show kitchen">
+        </button>
+
+        <button class="gallery-item"
+                data-category="dining"
+                type="button">
+            <img src="./assets/dirty-kitchen-01.png" alt="Preparation kitchen">
+        </button>
+
+        <button class="gallery-item"
+                data-category="dining"
+                type="button">
+            <img src="./assets/dirty-kitchen-02.png" alt="Preparation kitchen">
+        </button>
+
+
+        <!-- MAJLIS -->
+
+        <button class="gallery-item"
+                data-category="majlis"
+                type="button">
+            <img src="./assets/majlis-01.png" alt="Private majlis">
+        </button>
+
+        <button class="gallery-item gallery-large"
+                data-category="majlis"
+                type="button">
+            <img src="./assets/majlis-02.png" alt="Private majlis">
+        </button>
+
+        <button class="gallery-item"
+                data-category="majlis"
+                type="button">
+            <img src="./assets/majlis-03.png" alt="Private majlis">
+        </button>
+
+        <button class="gallery-item"
+                data-category="majlis"
+                type="button">
+            <img src="./assets/majlis-04.png" alt="Private majlis">
+        </button>
+
+
+        <!-- BEDROOMS -->
+
+        <button class="gallery-item gallery-large"
+                data-category="bedroom"
+                type="button">
+            <img src="./assets/master-bedroom-01.png" alt="Master bedroom">
+        </button>
+
+        <button class="gallery-item"
+                data-category="bedroom"
+                type="button">
+            <img src="./assets/master-bedroom-02.png" alt="Master bedroom">
+        </button>
+
+        <button class="gallery-item"
+                data-category="bedroom"
+                type="button">
+            <img src="./assets/master-bedroom-03.png" alt="Master bedroom">
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     GALLERY LIGHTBOX
+     ====================================================== -->
+
+<div class="gallery-lightbox" id="galleryLightbox">
+
+    <button class="gallery-close" id="galleryClose" type="button">
+        ×
+    </button>
+
+    <img id="galleryLightboxImage" src="" alt="">
+
+</div>
+
+<!-- ======================================================
+     MATERIALS & FINISHES
+     ====================================================== -->
+
+<section
+    class="materials-final section"
+    id="materials"
+>
+
+    <div class="materials-final-heading reveal">
+
+        <p
+            class="section-kicker"
+            data-i18n="materialsKicker"
+        >
+            MATERIALS &amp; FINISHES
+        </p>
+
+        <h2 data-i18n="materialsTitle">
+            A refined palette,
+            inside and out.
+        </h2>
+
+        <p
+            class="materials-final-intro"
+            data-i18n="materialsIntro"
+        >
+            Carefully selected materials, textures and finishes
+            create a cohesive architectural language throughout
+            every residence.
+        </p>
+
+    </div>
+
+
+    <div class="materials-final-grid">
+
+
+        <article
+            class="materials-final-card materials-final-feature reveal"
+        >
+
+            <div class="materials-final-image">
+
+     <img
+    id="exteriorMaterialsImage"
+    src="./assets/exterior-materials.jpg"
+    alt="Exterior Materials"
+>
+
+            </div>
+
+            <div class="materials-final-copy">
+
+                <span>01</span>
+
+                <h3 data-i18n="materialsExterior">
+                    Exterior Materials
+                </h3>
+
+                <p data-i18n="materialsExteriorDesc">
+                    Natural tones and textured architectural
+                    finishes establish an elegant and timeless
+                    exterior identity.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="materials-final-card reveal">
+
+            <div class="materials-final-image">
+
+                <img
+    id="interiorMaterialsImage"
+    src="./assets/interior-materials.jpg"
+    alt="Interior Materials"
+>
+
+            </div>
+
+            <div class="materials-final-copy">
+
+                <span>02</span>
+
+                <h3 data-i18n="materialsInterior">
+                    Interior Palette
+                </h3>
+
+                <p data-i18n="materialsInteriorDesc">
+                    Warm and balanced materials create a calm,
+                    refined atmosphere across the living spaces.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="materials-final-card reveal">
+
+            <div class="materials-final-image">
+
+              <img
+    id="finishesImage"
+    src="./assets/finishes.jpg"
+    alt="Selected Finishes"
+>
+
+            </div>
+
+            <div class="materials-final-copy">
+
+                <span>03</span>
+
+                <h3 data-i18n="materialsFinishes">
+                    Selected Finishes
+                </h3>
+
+                <p data-i18n="materialsFinishesDesc">
+                    Carefully coordinated surfaces, details and
+                    fixtures complete the architectural character.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+<!-- ======================================================
+     PROJECT UPDATES
+     ====================================================== -->
+
+<section
+    class="updates section"
+    id="updates"
+>
+
+
+    <div class="update-card reveal">
+
+
+        <div>
+
+
+            <p
+                class="section-kicker"
+                data-i18n="updatesKicker"
+            >
+                LIVE PROJECT
+            </p>
+
+
+            <h2 data-i18n="updatesTitle">
+                Follow construction progress.
+            </h2>
+
+
+            <p data-i18n="updatesBody">
+                View the latest site photographs and
+                project updates through the dedicated
+                project folder.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="update-actions">
+
+
+            <a
+                class="btn btn-gold"
+                target="_blank"
+                rel="noopener"
+                href="https://drive.google.com/drive/folders/165mK0rq1PVrhRO0VxVlLC5Mla2-nWL_t?usp=sharing"
+                data-i18n="siteUpdate"
+            >
+                Open Site Updates
+            </a>
+
+
+            <a
+                class="btn btn-ghost"
+                target="_blank"
+                rel="noopener"
+                href="https://drive.google.com/drive/folders/1EpBvb74QdGSMFSNzYxCMuMDpXJhXVXd_?usp=sharing"
+                data-i18n="renderings"
+            >
+                View 3D Renderings
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ======================================================
+     CONTACT
+     ====================================================== -->
+
+<section
+    class="contact section"
+    id="contact"
+>
+
+
+    <div class="contact-copy reveal">
+
+
+        <p
+            class="section-kicker"
+            data-i18n="contactKicker"
+        >
+            PRIVATE ENQUIRIES
+        </p>
+
+
+        <h2 data-i18n="contactTitle">
+            Request more information.
+        </h2>
+
+
+        <p data-i18n="contactBody">
+            For availability, pricing, private viewings
+            and further project information, contact
+            our sales representative.
+        </p>
+
+
+        <div class="sales-contact">
+
+
+            <strong data-i18n="salesName">
+                Abdullah Al Tahan
+            </strong>
+
+
+            <a href="tel:+96597616295">
+                +965 9761 6295
+            </a>
+
+
+            <a
+                href="mailto:abdullah.tahan@tfgfoodgroup.com"
+            >
+                abdullah.tahan@tfgfoodgroup.com
+            </a>
+
+
+            <a
+                class="text-link"
+                href="https://wa.me/96597616295"
+                target="_blank"
+                rel="noopener"
+                data-i18n="whatsappDirect"
+            >
+                Contact on WhatsApp →
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <form
+        class="contact-form reveal"
+        id="contactForm"
+        onsubmit="return false"
+    >
+
+
+        <label>
+
+            <span data-i18n="name">
+                Name
+            </span>
+
+            <input
+                id="contactName"
+                type="text"
+            >
+
+        </label>
+
+
+
+        <label>
+
+            <span data-i18n="phone">
+                Phone / WhatsApp
+            </span>
+
+            <input
+                id="contactPhone"
+                type="tel"
+            >
+
+        </label>
+
+
+
+        <label class="full">
+
+            <span data-i18n="message">
+                Message
+            </span>
+
+            <textarea
+                id="contactMessage"
+                rows="4"
+            ></textarea>
+
+        </label>
+
+
+
+        <button
+            class="btn btn-gold full"
+            type="button"
+            id="formButton"
+            data-i18n="sendWhatsApp"
+        >
+            Send via WhatsApp
+        </button>
+
+
+        <small
+            class="full form-note"
+            data-i18n="formNote"
+        >
+            Your enquiry will open in WhatsApp and can be
+            sent directly to Abdullah Al Tahan.
+        </small>
+
+
+    </form>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+
+<footer>
+
+
+    <div class="footer-brand">
+
+
+        <span class="brand-mark">
+            R
+        </span>
+
+
+        <div>
+
+            <strong data-i18n="brand">
+                THE RESERVE
+            </strong>
+
+            <small data-i18n="locationName">
+                YAAFOUR
+            </small>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+
+       <a
+    class="brochure-download"
+    href="Reserve-Villa-Brochure.pdf"
+    download
+    data-i18n="download"
+>
+    Download brochure
+</a>
+
+
+        <a
+            href="#top"
+            data-i18n="backTop"
+        >
+            Back to top ↑
+        </a>
+
+
+    </div>
+
+
+    <small>
+
+        © 2026 The Reserve Yaafour.
+
+        <span data-i18n="rights">
+            All rights reserved.
+        </span>
+
+    </small>
+
+
+</footer>
+
+
+
+
+
+<!-- MAIN JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

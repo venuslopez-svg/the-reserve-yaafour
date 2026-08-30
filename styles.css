@@ -1,0 +1,4779 @@
+/* =========================================================
+   THE RESERVE YAAFOUR
+   CLEAN FINAL STYLESHEET
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f2ede6;
+    color: #07182d;
+    font-family: Inter, Arial, sans-serif;
+    font-weight: 300;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    height: 80px;
+    padding: 0 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 50;
+
+    color: white;
+
+    background: rgba(3, 14, 29, 0.18);
+
+    backdrop-filter: blur(3px);
+
+    transition: 0.35s;
+}
+
+.site-header.scrolled {
+    background: rgba(4, 18, 37, 0.97);
+    box-shadow: 0 1px rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-mark {
+    width: 39px;
+    height: 52px;
+
+    border: 1px solid #caa44b;
+
+    display: grid;
+    place-items: center;
+
+    color: #d1ad56;
+
+    font: 600 36px/1 "Cormorant Garamond", serif;
+}
+
+.brand-copy {
+    display: grid;
+    gap: 2px;
+
+    letter-spacing: .16em;
+}
+
+.brand-copy strong {
+    font: 600 17px "Cormorant Garamond", serif;
+    letter-spacing: .20em;
+}
+
+.brand-copy small {
+    font-size: 8px;
+    letter-spacing: .50em;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.desktop-nav {
+    display: flex;
+    gap: 34px;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .12em;
+}
+
+.desktop-nav a {
+    opacity: .82;
+
+    transition: .25s;
+}
+
+.desktop-nav a:hover {
+    opacity: 1;
+    color: #d5b563;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.lang-switch,
+.menu-toggle {
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.lang-switch {
+    border: 1px solid rgba(255,255,255,.35);
+
+    padding: 8px 12px;
+}
+
+.menu-toggle {
+    display: none;
+
+    width: 36px;
+}
+
+.menu-toggle span {
+    display: block;
+
+    height: 1px;
+
+    margin: 7px 0;
+
+    background: white;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* =========================================================
+   HERO - FINAL PANORAMIC DESIGN
+   ========================================================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 820px;
+
+    overflow: hidden;
+
+    background: #031327;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* =========================================================
+   PANORAMIC ENTRANCE IMAGE
+   ========================================================= */
+
+.hero-bg {
+    position: absolute;
+
+    left: 0;
+    top: 17%;
+
+    width: 100%;
+    height: auto;
+
+    z-index: 0;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   DARK CINEMATIC OVERLAY
+   ========================================================= */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+
+        /* Dark bottom where text is */
+        linear-gradient(
+            to top,
+            rgba(3,14,29,1) 0%,
+            rgba(3,14,29,1) 18%,
+            rgba(3,14,29,.96) 25%,
+            rgba(3,14,29,.70) 34%,
+            rgba(3,14,29,.22) 43%,
+            rgba(3,14,29,0) 56%
+        );
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin-left: 4.8vw;
+    margin-bottom: 4.5vh;
+
+    padding: 0;
+
+    color: #fff;
+}
+
+
+/* GOLD SMALL TEXT */
+
+.hero .eyebrow {
+    margin: 0 0 12px;
+
+    color: #d5ad4c;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: .24em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+.hero h1 {
+    margin: 0 0 22px;
+
+    padding: 0;
+
+    max-width: 760px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(66px, 5.2vw, 94px);
+
+    line-height: .88;
+
+    font-weight: 500;
+
+    letter-spacing: -.03em;
+
+    color: white;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+
+    color: white;
+}
+
+
+.hero h1 em {
+    display: block;
+
+    margin: 4px 0 0;
+
+    padding: 0;
+
+    color: #d8ad48;
+
+    font-style: italic;
+
+    font-weight: 500;
+}
+
+
+.hero h1 br {
+    display: none;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-lead {
+    max-width: 540px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.82);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.hero .cta-row {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+}
+
+
+.hero .btn {
+    min-height: 50px;
+
+    padding: 0 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: .10em;
+
+    text-transform: uppercase;
+}
+
+
+.hero .btn-gold {
+    background: #d9b44d;
+
+    border: 1px solid #d9b44d;
+
+    color: #041225;
+}
+
+
+.hero .btn-ghost {
+    background: rgba(3,14,29,.15);
+
+    border: 1px solid rgba(255,255,255,.38);
+
+    color: white;
+}
+
+
+/* =========================================================
+   DISCOVER
+   ========================================================= */
+
+.hero .scroll-cue {
+    position: absolute;
+
+    right: 5vw;
+    bottom: 4.5vh;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+}
+
+
+.hero .scroll-cue i {
+    width: 42px;
+
+    height: 1px;
+
+    background: #d8ad48;
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .hero-content {
+    margin-left: 0;
+
+    margin-right: 4.8vw;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .hero .scroll-cue {
+    right: auto;
+
+    left: 5vw;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero-bg {
+    top: 74px;
+
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    max-width: none;
+
+    object-fit: contain;
+    object-position: center top;
+
+    transform: none;
+}
+
+
+    .hero-content,
+    html[dir="rtl"] .hero-content {
+
+        max-width: calc(100% - 48px);
+
+        margin-left: 24px;
+
+        margin-right: 24px;
+
+        margin-bottom: 7vh;
+    }
+
+
+    .hero h1 {
+        font-size: 49px;
+
+        line-height: .92;
+    }
+
+
+    .hero-lead {
+        font-size: 14px;
+    }
+
+
+    .hero .cta-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .hero .scroll-cue {
+        display: none;
+    }
+
+}/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.section {
+    padding: 110px 6vw;
+}
+
+.section h2 {
+    margin: 16px 0 28px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(42px, 5.4vw, 78px);
+
+    line-height: 1;
+
+    letter-spacing: -.025em;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PROJECT INTRO
+   ========================================================= */
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns: 1.05fr .95fr;
+
+    gap: 9vw;
+
+    align-items: start;
+}
+
+.intro-copy > p,
+.image-story-copy > p,
+.contact-copy > p {
+    color: #42505f;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+.stats {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 34px;
+
+    margin-top: 50px;
+}
+
+.stats div {
+    border-top: 1px solid #b9afa3;
+
+    padding-top: 18px;
+}
+
+.stats strong {
+    display: block;
+
+    font: 600 36px "Cormorant Garamond", serif;
+}
+
+.stats span {
+    color: #5e6873;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .11em;
+}
+
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.location-section {
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    gap: 0;
+
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+    padding-top: 110px;
+
+    padding-bottom: 110px;
+}
+
+.location-content {
+    background: #e9e0d6;
+
+    padding: 80px 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.location-content h2 {
+    margin: 18px 0 28px;
+
+    max-width: 580px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(52px, 5vw, 78px);
+
+    line-height: .95;
+
+    font-weight: 500;
+}
+
+.location-description {
+    max-width: 500px;
+
+    margin-bottom: 35px;
+
+    color: #56616c;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.location-times {
+    border-top: 1px solid #c9beb3;
+}
+
+.location-time {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    border-bottom: 1px solid #c9beb3;
+
+    padding: 18px 0;
+}
+
+.location-time strong {
+    color: #b28d34;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+}
+
+.location-time span {
+    color: #07182d;
+
+    font-size: 9px;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+}
+
+.location-time p {
+    margin: 4px 0 0;
+
+    color: #07182d;
+
+    font-size: 13px;
+}
+
+.location-map-link {
+    width: fit-content;
+
+    margin-top: 30px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #b28d34;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+}
+
+.location-map {
+    min-height: 680px;
+
+    overflow: hidden;
+
+    background: #07182d;
+}
+
+.location-map img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   ARCHITECTURE
+   ========================================================= */
+
+.dark {
+    background: #06172c;
+
+    color: white;
+}
+
+.image-story {
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: 6vw;
+
+    align-items: center;
+}
+
+.image-story-media {
+    overflow: hidden;
+}
+
+.image-story-media img {
+    width: 100%;
+
+    height: 680px;
+
+    object-fit: cover;
+}
+
+.dark .image-story-copy > p {
+    color: #c7ced7;
+}
+
+.feature-list {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 35px 0 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px 20px;
+}
+
+.feature-list li {
+    border-top: 1px solid rgba(255,255,255,.18);
+
+    padding-top: 14px;
+
+    color: #dfe4e8;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LIFESTYLE
+   ========================================================= */
+
+.section-heading {
+    max-width: 900px;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: 1.15fr .85fr;
+
+    gap: 18px;
+}
+
+.card {
+    overflow: hidden;
+
+    background: #e8dfd5;
+}
+
+.card-wide {
+    grid-row: span 2;
+}
+
+.card img {
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.card-wide img {
+    height: 620px;
+}
+
+.card > div {
+    padding: 24px;
+}
+
+.card span {
+    color: #a8832e;
+
+    font-size: 11px;
+}
+
+.card h3 {
+    margin: 8px 0;
+
+    font: 600 30px "Cormorant Garamond", serif;
+}
+
+.card p {
+    color: #58616a;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SPECIFICATIONS
+   ========================================================= */
+
+.spec-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7vw;
+
+    align-items: center;
+
+    background: #efe7de;
+}
+
+.spec-visual {
+    overflow: hidden;
+}
+
+.spec-visual img {
+    height: 720px;
+
+    object-fit: cover;
+}
+
+.spec-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 38px;
+}
+
+.spec-grid div {
+    border-top: 1px solid #c3b8ab;
+
+    padding: 18px 10px 18px 0;
+}
+
+.spec-grid b {
+    display: block;
+
+    font: 600 32px "Cormorant Garamond", serif;
+}
+
+.spec-grid span {
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .11em;
+}
+
+
+/* =========================================================
+   FLOOR PLANS
+   ========================================================= */
+
+.plans {
+    background: #f7f2ec;
+}
+
+.plan-tabs {
+    display: flex;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+
+    margin: 10px 0 30px;
+}
+
+.plan-tabs button {
+    padding: 12px 18px;
+
+    border: 1px solid #c9c0b6;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+}
+
+.plan-tabs button.active {
+    background: #07182d;
+
+    border-color: #07182d;
+
+    color: white;
+}
+
+.plan-viewer {
+    min-height: 640px;
+
+    padding: 25px;
+
+    background: #e9e1d8;
+
+    display: grid;
+
+    place-items: center;
+}
+
+.plan-viewer img {
+    width: auto;
+
+    max-width: 100%;
+
+    max-height: 780px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   FACILITIES
+   ========================================================= */
+
+.facility-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.facility-grid div {
+    padding: 24px 14px 24px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.16);
+
+    color: #caa44b;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+}
+
+.facility-grid span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: white;
+
+    font-family: Inter, sans-serif;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .11em;
+}
+
+.brand-note {
+    max-width: 780px;
+
+    margin-top: 30px;
+
+    color: #aeb8c5;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 290px;
+
+    gap: 10px;
+}
+
+.gallery-item {
+    padding: 0;
+
+    border: 0;
+
+    overflow: hidden;
+
+    background: #ddd;
+
+    cursor: zoom-in;
+}
+
+.gallery-item img {
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.035);
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+.gallery-item.wide {
+    grid-column: span 2;
+}
+
+
+/* =========================================================
+   PROJECT UPDATES - PREMIUM VERSION
+   ========================================================= */
+
+.updates {
+    position: relative;
+
+    padding-top: 115px;
+    padding-bottom: 115px;
+
+    background: #d8cbbb;
+
+    overflow: hidden;
+}
+
+
+/* SUBTLE BACKGROUND DETAIL */
+
+.updates::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -120px;
+    top: -150px;
+
+    border: 1px solid rgba(7,24,45,.08);
+
+    border-radius: 50%;
+}
+
+
+.updates::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    left: -90px;
+    bottom: -130px;
+
+    border: 1px solid rgba(7,24,45,.07);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.update-card {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 430px;
+
+    padding: 80px 85px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.45fr)
+        minmax(280px, .55fr);
+
+    gap: 80px;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07182d 0%,
+            #061629 55%,
+            #0b2038 100%
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 28px 65px rgba(7,24,45,.16);
+
+    overflow: hidden;
+}
+
+
+/* GOLD DECORATIVE LINE */
+
+.update-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 85px;
+
+    width: 90px;
+    height: 3px;
+
+    background: #caa44b;
+}
+
+
+/* SUBTLE INNER BORDER */
+
+.update-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 14px;
+
+    border: 1px solid rgba(255,255,255,.05);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.update-card .section-kicker {
+    margin: 0 0 18px;
+
+    color: #caa44b;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+}
+
+
+.update-card h2 {
+    max-width: 860px;
+
+    margin: 0 0 24px;
+
+    color: #ffffff;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(54px, 5vw, 82px);
+
+    line-height: .95;
+
+    font-weight: 500;
+
+    letter-spacing: -.025em;
+}
+
+
+.update-card p:not(.section-kicker) {
+    max-width: 690px;
+
+    margin: 0;
+
+    color: #b9c4cf;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.update-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    width: 100%;
+}
+
+
+/* BOTH BUTTONS */
+
+.update-actions .btn {
+    position: relative;
+
+    width: 100%;
+    min-height: 58px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-radius: 0;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .13em;
+
+    text-transform: uppercase;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+
+/* ARROW */
+
+.update-actions .btn::after {
+    content: "→";
+
+    margin-left: 18px;
+
+    font-size: 17px;
+
+    font-weight: 300;
+
+    transition: transform .3s ease;
+}
+
+
+.update-actions .btn:hover::after {
+    transform: translateX(5px);
+}
+
+
+/* GOLD PRIMARY BUTTON */
+
+.update-actions .btn-gold {
+    background: #caa44b;
+
+    border: 1px solid #caa44b;
+
+    color: #07182d;
+}
+
+
+.update-actions .btn-gold:hover {
+    background: #d8b65c;
+
+    border-color: #d8b65c;
+
+    transform: translateY(-2px);
+}
+
+
+/* OUTLINE SECONDARY BUTTON */
+
+.update-actions .btn-ghost {
+    background: transparent;
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    color: #ffffff;
+}
+
+
+.update-actions .btn-ghost:hover {
+    background: rgba(255,255,255,.06);
+
+    border-color: #caa44b;
+
+    color: #d8b65c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .update-card {
+    text-align: right;
+}
+
+
+html[dir="rtl"] .update-card::before {
+    left: auto;
+    right: 85px;
+}
+
+
+html[dir="rtl"] .update-actions .btn::after {
+    content: "←";
+
+    margin-left: 0;
+    margin-right: 18px;
+}
+
+
+html[dir="rtl"] .update-actions .btn:hover::after {
+    transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .updates {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+
+    .update-card {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 70px 55px;
+    }
+
+
+    .update-actions {
+        max-width: 420px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .updates {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+
+    .update-card {
+        min-height: auto;
+
+        padding: 55px 27px;
+
+        gap: 35px;
+    }
+
+
+    .update-card::before {
+        left: 27px;
+
+        width: 65px;
+    }
+
+
+    html[dir="rtl"] .update-card::before {
+        left: auto;
+        right: 27px;
+    }
+
+
+    .update-card h2 {
+        font-size: 46px;
+    }
+
+
+    .update-card p:not(.section-kicker) {
+        font-size: 13px;
+    }
+
+
+    .update-actions {
+        max-width: none;
+    }
+
+
+    .update-actions .btn {
+        min-height: 55px;
+
+        font-size: 9px;
+    }
+
+}
+/* =========================================================
+   CONTACT - PREMIUM VERSION
+   ========================================================= */
+
+.contact {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, .9fr)
+        minmax(0, 1.1fr);
+
+    gap: 8vw;
+
+    align-items: start;
+
+    background: #f3ede5;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.contact-copy {
+    max-width: 620px;
+}
+
+
+.contact-copy .section-kicker {
+    margin-bottom: 20px;
+
+    color: #a98435;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+}
+
+
+.contact-copy h2 {
+    max-width: 580px;
+
+    margin: 0 0 34px;
+
+    color: #07182d;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(58px, 5vw, 82px);
+
+    line-height: .96;
+
+    font-weight: 500;
+
+    letter-spacing: -.025em;
+}
+
+
+.contact-copy > p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #59636d;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   SALES CONTACT
+   ========================================================= */
+
+.sales-contact {
+    display: grid;
+
+    gap: 10px;
+
+    margin-top: 42px;
+
+    padding-top: 28px;
+
+    border-top: 1px solid #c8beb3;
+}
+
+
+.sales-contact strong {
+    margin-bottom: 4px;
+
+    color: #07182d;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+
+.sales-contact > a:not(.text-link) {
+    width: fit-content;
+
+    color: #18283a;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    transition: color .25s ease;
+}
+
+
+.sales-contact > a:not(.text-link):hover {
+    color: #a98435;
+}
+
+
+/* DIRECT WHATSAPP LINK */
+
+.sales-contact .text-link {
+    width: fit-content;
+
+    margin-top: 12px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #caa44b;
+
+    color: #07182d;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    transition:
+        color .25s ease,
+        border-color .25s ease;
+}
+
+
+.sales-contact .text-link:hover {
+    color: #a98435;
+}
+
+
+/* =========================================================
+   FORM PANEL
+   ========================================================= */
+
+.contact-form {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px 26px;
+
+    padding: 48px;
+
+    background: #ece3d9;
+
+    border: 1px solid rgba(7,24,45,.10);
+}
+
+
+/* GOLD LINE */
+
+.contact-form::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 48px;
+
+    width: 70px;
+    height: 2px;
+
+    background: #caa44b;
+}
+
+
+/* =========================================================
+   FORM LABELS
+   ========================================================= */
+
+.contact-form label {
+    display: grid;
+
+    gap: 10px;
+
+    color: #07182d;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px 0 12px;
+
+    border: 0;
+
+    border-bottom: 1px solid #afa397;
+
+    border-radius: 0;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #07182d;
+
+    font-family: Inter, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    transition: border-color .25s ease;
+}
+
+
+.contact-form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: #caa44b;
+}
+
+
+/* =========================================================
+   FULL WIDTH ROW
+   ========================================================= */
+
+.contact-form .full {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   WHATSAPP BUTTON
+   ========================================================= */
+
+.contact-form .btn-gold {
+    width: fit-content;
+
+    min-width: 220px;
+
+    min-height: 56px;
+
+    padding: 0 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 22px;
+
+    border: 1px solid #caa44b;
+
+    background: #caa44b;
+
+    color: #07182d;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+
+.contact-form .btn-gold::after {
+    content: "→";
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    transition: transform .25s ease;
+}
+
+
+.contact-form .btn-gold:hover {
+    background: #d8b65c;
+
+    transform: translateY(-2px);
+}
+
+
+.contact-form .btn-gold:hover::after {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FORM NOTE
+   ========================================================= */
+
+.form-note {
+    max-width: 620px;
+
+    margin-top: -8px;
+
+    color: #7a8289;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    text-transform: none;
+
+    letter-spacing: normal;
+}
+
+
+/* =========================================================
+   ARABIC / RTL
+   ========================================================= */
+
+html[dir="rtl"] .contact {
+    text-align: right;
+}
+
+
+html[dir="rtl"] .contact-copy h2,
+html[dir="rtl"] .sales-contact strong {
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+    letter-spacing: 0;
+}
+
+
+html[dir="rtl"] .contact-form::before {
+    left: auto;
+    right: 48px;
+}
+
+
+html[dir="rtl"] .contact-form .btn-gold::after {
+    content: "←";
+}
+
+
+html[dir="rtl"] .contact-form .btn-gold:hover::after {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .contact {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .contact-form {
+        padding: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .contact {
+        gap: 45px;
+    }
+
+
+    .contact-copy h2 {
+        font-size: 48px;
+    }
+
+
+    .sales-contact strong {
+        font-size: 28px;
+    }
+
+
+    .contact-form {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+
+        padding: 38px 24px;
+    }
+
+
+    .contact-form::before {
+        left: 24px;
+    }
+
+
+    html[dir="rtl"] .contact-form::before {
+        left: auto;
+        right: 24px;
+    }
+
+
+    .contact-form .full {
+        grid-column: auto;
+    }
+
+
+    .contact-form .btn-gold {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    padding: 50px 6vw;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    gap: 28px;
+
+    align-items: center;
+
+    background: #041225;
+
+    color: white;
+}
+
+.footer-brand {
+    display: flex;
+
+    gap: 13px;
+
+    align-items: center;
+}
+
+.footer-brand div {
+    display: grid;
+}
+
+.footer-brand strong {
+    font: 600 18px "Cormorant Garamond", serif;
+
+    letter-spacing: .18em;
+}
+
+.footer-brand small {
+    font-size: 8px;
+
+    letter-spacing: .4em;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .1em;
+}
+
+footer > small {
+    color: #708093;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+   ========================================================= */
+
+.lightbox {
+    width: min(92vw, 1100px);
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+}
+
+.lightbox::backdrop {
+    background: rgba(0,0,0,.88);
+}
+
+.lightbox img {
+    max-height: 88vh;
+
+    object-fit: contain;
+}
+
+.lightbox button {
+    position: fixed;
+
+    top: 20px;
+    right: 28px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(22px);
+
+    transition:
+        opacity .75s ease,
+        transform .75s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] body {
+    font-family: "Noto Kufi Arabic", Arial, sans-serif;
+}
+
+html[dir="rtl"] .hero h1,
+html[dir="rtl"] .section h2,
+html[dir="rtl"] .card h3,
+html[dir="rtl"] .stats strong,
+html[dir="rtl"] .spec-grid b {
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .section-kicker,
+html[dir="rtl"] .brand-copy,
+html[dir="rtl"] .desktop-nav,
+html[dir="rtl"] .btn {
+    letter-spacing: 0;
+}
+
+
+/* HERO ARABIC */
+
+html[dir="rtl"] .hero-content {
+    margin-left: 0;
+
+    margin-right: 4.8vw;
+
+    text-align: right;
+}
+
+html[dir="rtl"] .scroll-cue {
+    right: auto;
+
+    left: 5vw;
+}
+
+
+/* LOCATION ARABIC */
+
+html[dir="rtl"] .location-section {
+    grid-template-columns: 58% 42%;
+}
+
+html[dir="rtl"] .location-content {
+    order: 2;
+
+    text-align: right;
+}
+
+html[dir="rtl"] .location-map {
+    order: 1;
+}
+
+html[dir="rtl"] .location-time {
+    grid-template-columns: 1fr 70px;
+}
+
+html[dir="rtl"] .location-time strong {
+    order: 2;
+}
+
+html[dir="rtl"] .location-map-link {
+    margin-left: auto;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        position: fixed;
+
+        inset: 80px 0 0;
+
+        z-index: 45;
+
+        padding: 55px 6vw;
+
+        flex-direction: column;
+
+        gap: 28px;
+
+        background: #07182d;
+
+        color: white;
+
+        font: 500 30px "Cormorant Garamond", serif;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .intro-grid,
+    .image-story,
+    .spec-section,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-wide {
+        grid-row: auto;
+    }
+
+    .card-wide img {
+        height: 420px;
+    }
+
+    .spec-visual img {
+        height: 560px;
+    }
+
+    .update-card {
+        grid-template-columns: 1fr;
+    }
+
+    .update-actions {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* LOCATION */
+
+    .location-section,
+    html[dir="rtl"] .location-section {
+        grid-template-columns: 1fr;
+    }
+
+    .location-content {
+        padding: 60px 45px;
+    }
+
+    .location-map {
+        min-height: 520px;
+    }
+
+    html[dir="rtl"] .location-content,
+    html[dir="rtl"] .location-map {
+        order: initial;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        height: 74px;
+
+        padding: 0 20px;
+    }
+
+    .brand-copy strong {
+        font-size: 13px;
+    }
+
+    .brand-mark {
+        width: 32px;
+        height: 43px;
+
+        font-size: 30px;
+    }
+
+    .mobile-menu {
+        inset: 74px 0 0;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 720px;
+    }
+
+    .hero-bg {
+        top: 18%;
+
+        width: auto;
+        height: 42%;
+
+        max-width: none;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    .hero-content,
+    html[dir="rtl"] .hero-content {
+        max-width: calc(100% - 48px);
+
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 7vh;
+    }
+
+    .hero h1 {
+        font-size: 49px;
+
+        line-height: .94;
+    }
+
+    .hero-lead {
+        max-width: 430px;
+
+        font-size: 14px;
+    }
+
+    .cta-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .scroll-cue {
+        display: none;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 78px 20px;
+    }
+
+    .section h2 {
+        font-size: 43px;
+    }
+
+    .intro-grid {
+        gap: 20px;
+    }
+
+    .stats {
+        gap: 22px;
+    }
+
+    .stats strong {
+        font-size: 28px;
+    }
+
+
+    /* LOCATION */
+
+    .location-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .location-content {
+        padding: 45px 25px;
+    }
+
+    .location-content h2 {
+        font-size: 46px;
+    }
+
+    .location-map {
+        min-height: 420px;
+    }
+
+
+    /* ARCHITECTURE */
+
+    .image-story {
+        gap: 36px;
+    }
+
+    .image-story-media img {
+        height: 470px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* LIFESTYLE */
+
+    .card img,
+    .card-wide img {
+        height: 330px;
+    }
+
+
+    /* SPECIFICATIONS */
+
+    .spec-visual img {
+        height: 480px;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* PLANS */
+
+    .plan-viewer {
+        min-height: 420px;
+
+        padding: 10px;
+    }
+
+
+    /* FACILITIES */
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-auto-rows: 220px;
+    }
+
+    .gallery-item.wide {
+        grid-column: span 2;
+    }
+
+
+    /* UPDATE */
+
+    .update-card {
+        padding: 42px 24px;
+    }
+
+    .update-actions {
+        flex-direction: column;
+    }
+
+
+    /* CONTACT */
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+}
+
+/* =========================================================
+   ARCHITECTURE - CLEAN WEB VERSION
+   ========================================================= */
+
+.architecture-section {
+    display: grid;
+    grid-template-columns: 56% 44%;
+
+    min-height: 720px;
+
+    background: #06172c;
+
+    color: white;
+}
+
+
+/* IMAGE */
+
+.architecture-image {
+    min-height: 720px;
+
+    overflow: hidden;
+}
+
+.architecture-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    transition: transform .8s ease;
+}
+
+.architecture-image:hover img {
+    transform: scale(1.015);
+}
+
+
+/* CONTENT */
+
+.architecture-content {
+    padding: 80px 9%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.architecture-content .section-kicker {
+    margin: 0 0 18px;
+
+    color: #caa44b;
+}
+
+
+.architecture-content h2 {
+    max-width: 620px;
+
+    margin: 0 0 30px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(52px, 4.8vw, 76px);
+
+    line-height: .96;
+
+    letter-spacing: -.025em;
+
+    font-weight: 500;
+}
+
+
+.architecture-description {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: #bfc8d2;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+}
+
+
+/* FEATURES */
+
+.architecture-features {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0 30px;
+
+    margin-top: 45px;
+
+    max-width: 620px;
+}
+
+
+.architecture-features div {
+    padding: 17px 0;
+
+    border-top: 1px solid rgba(255,255,255,.18);
+
+    color: #e3e7eb;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ARABIC ARCHITECTURE
+   ========================================================= */
+
+html[dir="rtl"] .architecture-section {
+    grid-template-columns: 44% 56%;
+}
+
+html[dir="rtl"] .architecture-content {
+    order: 1;
+
+    text-align: right;
+}
+
+html[dir="rtl"] .architecture-image {
+    order: 2;
+}
+
+html[dir="rtl"] .architecture-content h2 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .architecture-section {
+        grid-template-columns: 1fr;
+    }
+
+    .architecture-image {
+        min-height: 560px;
+    }
+
+    .architecture-content {
+        padding: 70px 45px;
+    }
+
+    html[dir="rtl"] .architecture-section {
+        grid-template-columns: 1fr;
+    }
+
+    html[dir="rtl"] .architecture-content,
+    html[dir="rtl"] .architecture-image {
+        order: initial;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .architecture-image {
+        min-height: 420px;
+    }
+
+    .architecture-content {
+        padding: 55px 25px;
+    }
+
+    .architecture-content h2 {
+        font-size: 44px;
+    }
+
+    .architecture-features {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   LIFESTYLE - EDITORIAL WEB VERSION
+   ========================================================= */
+
+.lifestyle-new {
+    background: #f3ede5;
+}
+
+
+/* HEADING */
+
+.lifestyle-new .section-heading {
+    max-width: 900px;
+
+    margin-bottom: 55px;
+}
+
+.lifestyle-new .section-heading h2 {
+    max-width: 760px;
+}
+
+
+/* =========================================================
+   LARGE FEATURE
+   ========================================================= */
+
+.lifestyle-feature {
+    display: grid;
+
+    grid-template-columns: 68% 32%;
+
+    min-height: 560px;
+
+    margin-bottom: 24px;
+
+    overflow: hidden;
+
+    background: #07182d;
+}
+
+
+.lifestyle-feature-image {
+    overflow: hidden;
+}
+
+
+.lifestyle-feature-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .7s ease;
+}
+
+
+.lifestyle-feature:hover img {
+    transform: scale(1.015);
+}
+
+
+.lifestyle-feature-copy {
+    padding: 55px 45px 110px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    color: white;
+}
+
+.lifestyle-feature-copy span,
+.lifestyle-card-copy span {
+    color: #caa44b;
+
+    font-size: 10px;
+
+    letter-spacing: .15em;
+}
+
+
+.lifestyle-feature-copy h3 {
+    margin: 12px 0 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 46px;
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+.lifestyle-feature-copy p {
+    max-width: 380px;
+
+    margin: 0;
+
+    color: #c3ccd5;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LIFESTYLE GRID
+   ========================================================= */
+
+.lifestyle-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+.lifestyle-card {
+    overflow: hidden;
+
+    background: #e8ded2;
+}
+
+
+.lifestyle-card-image {
+    height: 360px;
+
+    overflow: hidden;
+}
+
+
+.lifestyle-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .6s ease;
+}
+
+
+.lifestyle-card:hover img {
+    transform: scale(1.02);
+}
+
+
+.lifestyle-card-copy {
+    padding: 28px 30px 34px;
+}
+
+
+.lifestyle-card-copy h3 {
+    margin: 9px 0 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+.lifestyle-card-copy p {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: #5d6670;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .lifestyle-feature {
+    grid-template-columns: 32% 68%;
+}
+
+
+html[dir="rtl"] .lifestyle-feature-copy {
+    order: 1;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .lifestyle-feature-image {
+    order: 2;
+}
+
+
+html[dir="rtl"] .lifestyle-feature-copy h3,
+html[dir="rtl"] .lifestyle-card-copy h3 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+    letter-spacing: 0;
+}
+
+
+html[dir="rtl"] .lifestyle-card-copy {
+    text-align: right;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .lifestyle-feature {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+
+    .lifestyle-feature-image {
+        height: 520px;
+    }
+
+
+    .lifestyle-feature-copy {
+        padding: 45px;
+    }
+
+
+    html[dir="rtl"] .lifestyle-feature {
+        grid-template-columns: 1fr;
+    }
+
+
+    html[dir="rtl"] .lifestyle-feature-copy,
+    html[dir="rtl"] .lifestyle-feature-image {
+        order: initial;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .lifestyle-new .section-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .lifestyle-feature-image {
+        height: 360px;
+    }
+
+
+    .lifestyle-feature-copy {
+        padding: 32px 25px;
+    }
+
+
+    .lifestyle-feature-copy h3 {
+        font-size: 38px;
+    }
+
+
+    .lifestyle-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .lifestyle-card-image {
+        height: 290px;
+    }
+
+
+    .lifestyle-card-copy {
+        padding: 24px;
+    }
+
+
+    .lifestyle-card-copy h3 {
+        font-size: 28px;
+    }
+
+}
+
+/* =========================================================
+   VILLA SPECIFICATIONS
+   ========================================================= */
+
+.villa-specs {
+    display: grid;
+
+    grid-template-columns: 48% 52%;
+
+    gap: 6vw;
+
+    align-items: center;
+
+    background: #efe7de;
+}
+
+
+/* IMAGE */
+
+.villa-specs-image {
+    min-height: 680px;
+
+    overflow: hidden;
+}
+
+.villa-specs-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    transition: transform .7s ease;
+}
+
+.villa-specs-image:hover img {
+    transform: scale(1.015);
+}
+
+
+/* CONTENT */
+
+.villa-specs-content {
+    padding-right: 4vw;
+}
+
+
+.villa-specs-content h2 {
+    max-width: 700px;
+
+    margin: 18px 0 26px;
+}
+
+
+.villa-specs-intro {
+    max-width: 610px;
+
+    margin: 0 0 38px;
+
+    color: #59636c;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* SPECIFICATION GRID */
+
+.villa-specs-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 700px;
+}
+
+
+.spec-item {
+    padding: 18px 12px 18px 0;
+
+    border-top: 1px solid #c8bdb1;
+}
+
+
+.spec-item strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 36px;
+
+    font-weight: 600;
+
+    color: #07182d;
+}
+
+
+.spec-item span {
+    display: block;
+
+    color: #47515b;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: .12em;
+
+    line-height: 1.5;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .villa-specs {
+    grid-template-columns: 52% 48%;
+}
+
+
+html[dir="rtl"] .villa-specs-content {
+    order: 1;
+
+    padding-right: 0;
+    padding-left: 4vw;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .villa-specs-image {
+    order: 2;
+}
+
+
+html[dir="rtl"] .spec-item {
+    padding-left: 12px;
+    padding-right: 0;
+}
+
+
+html[dir="rtl"] .spec-item strong {
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .villa-specs,
+    html[dir="rtl"] .villa-specs {
+        grid-template-columns: 1fr;
+    }
+
+
+    .villa-specs-image {
+        min-height: 520px;
+    }
+
+
+    .villa-specs-content {
+        padding-right: 0;
+    }
+
+
+    html[dir="rtl"] .villa-specs-content {
+        padding-left: 0;
+    }
+
+
+    html[dir="rtl"] .villa-specs-content,
+    html[dir="rtl"] .villa-specs-image {
+        order: initial;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .villa-specs-image {
+        min-height: 390px;
+    }
+
+
+    .villa-specs-intro {
+        font-size: 14px;
+    }
+
+
+    .villa-specs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .spec-item strong {
+        font-size: 30px;
+    }
+
+
+    .spec-item span {
+        font-size: 9px;
+    }
+
+}
+
+/* =========================================================
+   FLOOR PLANS - INTERACTIVE VERSION
+   ========================================================= */
+
+.floorplans-section {
+    background: #f7f2ec;
+}
+
+
+/* HEADING */
+
+.floorplans-heading {
+    max-width: 850px;
+
+    margin-bottom: 40px;
+}
+
+
+.floorplans-heading h2 {
+    margin-bottom: 20px;
+}
+
+
+.floorplans-intro {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #5c6670;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* TABS */
+
+.floorplans-tabs {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 28px;
+}
+
+
+.floorplan-tab {
+    padding: 13px 20px;
+
+    border: 1px solid #c9c0b6;
+
+    background: transparent;
+
+    color: #07182d;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    transition: .25s;
+}
+
+
+.floorplan-tab:hover {
+    border-color: #a8832e;
+
+    color: #a8832e;
+}
+
+
+.floorplan-tab.active {
+    background: #07182d;
+
+    border-color: #07182d;
+
+    color: white;
+}
+
+
+/* VIEWER */
+
+.floorplans-viewer {
+    position: relative;
+
+    min-height: 720px;
+
+    overflow: hidden;
+
+    background: #e9e1d8;
+}
+
+
+.floorplans-image-wrap {
+    width: 100%;
+
+    min-height: 720px;
+
+    display: grid;
+
+    place-items: center;
+
+    padding: 35px;
+}
+
+
+.floorplans-image-wrap img {
+    width: auto;
+
+    max-width: 100%;
+
+    max-height: 780px;
+
+    object-fit: contain;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+
+.floorplans-image-wrap img.switching {
+    opacity: 0;
+
+    transform: scale(.985);
+}
+
+
+/* PLAN NAME */
+
+.floorplans-caption {
+    position: absolute;
+
+    left: 28px;
+
+    bottom: 28px;
+
+    min-width: 220px;
+
+    padding: 18px 22px;
+
+    background: rgba(7,24,45,.94);
+
+    color: white;
+}
+
+
+.floorplans-caption span {
+    color: #caa44b;
+
+    font-size: 9px;
+
+    letter-spacing: .18em;
+}
+
+
+.floorplans-caption h3 {
+    margin: 6px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .floorplans-heading {
+    margin-left: auto;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .floorplans-tabs {
+    justify-content: flex-start;
+}
+
+
+html[dir="rtl"] .floorplans-caption {
+    left: auto;
+
+    right: 28px;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .floorplans-caption h3 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .floorplans-viewer,
+    .floorplans-image-wrap {
+        min-height: 600px;
+    }
+
+
+    .floorplans-image-wrap {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .floorplans-tabs {
+        gap: 6px;
+    }
+
+
+    .floorplan-tab {
+        padding: 11px 13px;
+
+        font-size: 9px;
+    }
+
+
+    .floorplans-viewer,
+    .floorplans-image-wrap {
+        min-height: 430px;
+    }
+
+
+    .floorplans-image-wrap {
+        padding: 12px;
+    }
+
+
+    .floorplans-caption {
+        left: 14px;
+
+        bottom: 14px;
+
+        min-width: 170px;
+
+        padding: 14px 16px;
+    }
+
+
+    html[dir="rtl"] .floorplans-caption {
+        left: auto;
+
+        right: 14px;
+    }
+
+
+    .floorplans-caption h3 {
+        font-size: 23px;
+    }
+
+}
+
+
+/* =========================================================
+   FACILITIES & TECHNOLOGY - FINAL WEB VERSION
+   ========================================================= */
+
+.facilities-web {
+    background: #07182d;
+    color: #ffffff;
+}
+
+
+.facilities-web-heading {
+    max-width: 900px;
+    margin-bottom: 55px;
+}
+
+
+.facilities-web-heading .section-kicker {
+    color: #caa44b;
+}
+
+
+.facilities-web-heading h2 {
+    max-width: 760px;
+    margin: 15px 0 22px;
+    color: #ffffff;
+}
+
+
+.facilities-web-intro {
+    max-width: 650px;
+    margin: 0;
+
+    color: #aab5c1;
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* GRID */
+
+.facilities-web-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    border-top:
+        1px solid rgba(255,255,255,.14);
+}
+
+
+.facility-web-item {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 32px 28px 32px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.14);
+}
+
+
+.facility-web-item:nth-child(odd) {
+    border-right:
+        1px solid rgba(255,255,255,.14);
+}
+
+
+.facility-web-number {
+    padding-top: 5px;
+
+    color: #caa44b;
+
+    font-size: 9px;
+
+    letter-spacing: .16em;
+}
+
+
+.facility-web-item h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 31px;
+
+    font-weight: 500;
+}
+
+
+.facility-web-item p {
+    max-width: 470px;
+
+    margin: 0;
+
+    color: #9fabb8;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+}
+
+
+/* BRANDS */
+
+.facilities-brands {
+    margin-top: 65px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid rgba(255,255,255,.16);
+}
+
+
+.facilities-brands > p {
+    margin: 0 0 25px;
+
+    color: #caa44b;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: .18em;
+}
+
+
+.facilities-brand-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    gap: 25px 35px;
+
+    align-items: center;
+}
+
+
+.facilities-brand-list span {
+    color: #ffffff;
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    opacity: .82;
+}
+
+
+/* ARABIC */
+
+html[dir="rtl"] .facilities-web {
+    text-align: right;
+}
+
+
+html[dir="rtl"] .facility-web-item {
+    padding:
+        32px 0
+        32px 28px;
+}
+
+
+html[dir="rtl"] .facility-web-item:nth-child(odd) {
+    border-right: 0;
+
+    border-left:
+        1px solid rgba(255,255,255,.14);
+}
+
+
+html[dir="rtl"] .facility-web-item h3 {
+    font-family:
+        "Noto Kufi Arabic",
+        sans-serif;
+}
+
+
+html[dir="rtl"] .facilities-web-heading {
+    margin-left: auto;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .facilities-web-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .facility-web-item:nth-child(odd),
+    html[dir="rtl"] .facility-web-item:nth-child(odd) {
+        border-right: 0;
+        border-left: 0;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .facilities-web-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .facility-web-item {
+        grid-template-columns:
+            35px 1fr;
+
+        gap: 14px;
+
+        padding:
+            25px 0;
+    }
+
+
+    html[dir="rtl"] .facility-web-item {
+        padding:
+            25px 0;
+    }
+
+
+    .facility-web-item h3 {
+        font-size: 25px;
+    }
+
+
+    .facilities-brand-list {
+        justify-content: flex-start;
+
+        gap: 20px 28px;
+    }
+
+
+    .facilities-brand-list span {
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .facilities-heading {
+    margin-left: auto;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .facilities-layout {
+    grid-template-columns: 45% 55%;
+}
+
+
+html[dir="rtl"] .facilities-image {
+    order: 2;
+}
+
+
+html[dir="rtl"] .facilities-list {
+    order: 1;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .facility-item {
+    grid-template-columns: 45px 1fr;
+}
+
+
+html[dir="rtl"] .facility-item h3 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .facilities-layout,
+    html[dir="rtl"] .facilities-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .facilities-image {
+        min-height: 520px;
+    }
+
+
+    .facilities-list {
+        padding: 35px 40px;
+    }
+
+
+    html[dir="rtl"] .facilities-image,
+    html[dir="rtl"] .facilities-list {
+        order: initial;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .facilities-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .facilities-image {
+        min-height: 380px;
+    }
+
+
+    .facilities-list {
+        padding: 25px;
+    }
+
+
+    .facility-item {
+        grid-template-columns: 32px 1fr;
+
+        gap: 12px;
+
+        padding: 20px 0;
+    }
+
+
+    .facility-item h3 {
+        font-size: 22px;
+    }
+
+
+    .facility-item p {
+        font-size: 11px;
+    }
+
+}
+
+/* =========================================================
+   FACILITIES - FULL REFERENCE IMAGE
+   ========================================================= */
+
+.facilities-reference {
+    width: 100%;
+    background: #06182c;
+    overflow: hidden;
+}
+
+.facilities-reference img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1400px) {
+
+    .facilities-reference img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .facilities-reference {
+        overflow-x: auto;
+    }
+
+    .facilities-reference img {
+        min-width: 1100px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .facilities-reference img {
+        min-width: 900px;
+    }
+
+}
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.gallery-new {
+    background: #f3ede5;
+}
+
+
+/* HEADING */
+
+.gallery-heading {
+    max-width: 850px;
+    margin-bottom: 35px;
+}
+
+
+.gallery-heading h2 {
+    margin: 15px 0 20px;
+}
+
+
+.gallery-intro {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: #5e6871;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FILTER BUTTONS
+   ========================================================= */
+
+.gallery-filters {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 28px;
+}
+
+
+.gallery-filter {
+    padding: 12px 18px;
+
+    border: 1px solid #c8beb3;
+
+    background: transparent;
+
+    color: #07182d;
+
+    cursor: pointer;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: .12em;
+
+    text-transform: uppercase;
+
+    transition: .25s ease;
+}
+
+
+.gallery-filter:hover {
+    border-color: #b28d3f;
+
+    color: #9d782c;
+}
+
+
+.gallery-filter.active {
+    background: #07182d;
+
+    border-color: #07182d;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   IMAGE GRID
+   ========================================================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    grid-auto-rows: 290px;
+
+    gap: 14px;
+}
+
+
+.gallery-item {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    border: none;
+
+    overflow: hidden;
+
+    background: #07182d;
+
+    cursor: pointer;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform .65s ease,
+        opacity .35s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.025);
+
+    opacity: .94;
+}
+
+
+.gallery-large {
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+/* HIDDEN WHEN FILTERED */
+
+.gallery-item.gallery-hidden {
+    display: none;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+   ========================================================= */
+
+.gallery-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    background: rgba(3, 14, 27, .97);
+}
+
+
+.gallery-lightbox.open {
+    display: flex;
+}
+
+
+.gallery-lightbox img {
+    max-width: 92vw;
+
+    max-height: 88vh;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+.gallery-close {
+    position: absolute;
+
+    top: 24px;
+
+    right: 30px;
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    background: rgba(7,24,45,.35);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 31px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        grid-auto-rows: 270px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .gallery-filters {
+        gap: 6px;
+    }
+
+
+    .gallery-filter {
+        padding: 10px 12px;
+
+        font-size: 8px;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 260px;
+    }
+
+
+    .gallery-large {
+        grid-column: span 1;
+
+        grid-row: span 1;
+    }
+
+
+    .gallery-lightbox {
+        padding: 15px;
+    }
+
+
+    .gallery-close {
+        top: 14px;
+
+        right: 14px;
+    }
+
+}
+
+/* =========================================================
+   MATERIALS & FINISHES - FINAL VERSION
+   ========================================================= */
+
+.materials-final {
+    background: #eee7df;
+}
+
+
+.materials-final-heading {
+    max-width: 850px;
+    margin-bottom: 50px;
+}
+
+
+.materials-final-heading .section-kicker {
+    color: #a98435;
+}
+
+
+.materials-final-heading h2 {
+    max-width: 760px;
+
+    margin: 15px 0 22px;
+
+    color: #07182d;
+}
+
+
+.materials-final-intro {
+    max-width: 630px;
+
+    margin: 0;
+
+    color: #5b6570;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+}
+
+
+/* GRID */
+
+.materials-final-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* CARD */
+
+.materials-final-card {
+    overflow: hidden;
+
+    background: #f5f0ea;
+
+    border:
+        1px solid rgba(7,24,45,.08);
+
+    box-shadow:
+        0 15px 35px
+        rgba(7,24,45,.06);
+}
+
+
+.materials-final-feature {
+    grid-column:
+        1 / -1;
+}
+
+
+/* IMAGE */
+
+.materials-final-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #07182d;
+}
+
+
+.materials-final-image img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition:
+        transform .5s ease;
+}
+
+
+.materials-final-card:hover img {
+    transform:
+        scale(1.008);
+}
+
+
+/* COPY */
+
+.materials-final-copy {
+    padding:
+        28px 30px 34px;
+}
+
+
+.materials-final-copy span {
+    color: #b28d34;
+
+    font-size: 9px;
+
+    letter-spacing: .16em;
+}
+
+
+.materials-final-copy h3 {
+    margin:
+        8px 0 12px;
+
+    color: #07182d;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+}
+
+
+.materials-final-copy p {
+    max-width: 580px;
+
+    margin: 0;
+
+    color: #626c75;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+/* ARABIC */
+
+html[dir="rtl"] .materials-final {
+    text-align: right;
+}
+
+
+html[dir="rtl"] .materials-final-heading {
+    margin-left: auto;
+}
+
+
+html[dir="rtl"] .materials-final-copy h3 {
+    font-family:
+        "Noto Kufi Arabic",
+        sans-serif;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+
+    .materials-final-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .materials-final-feature {
+        grid-column: auto;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .materials-final-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .materials-final-grid {
+        gap: 16px;
+    }
+
+
+    .materials-final-copy {
+        padding:
+            24px 22px 28px;
+    }
+
+
+    .materials-final-copy h3 {
+        font-size: 27px;
+    }
+
+}
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.materials-heading {
+    max-width: 850px;
+    margin-bottom: 48px;
+}
+
+
+.materials-heading .section-kicker {
+    color: #a98435;
+}
+
+
+.materials-heading h2 {
+    max-width: 760px;
+    margin: 15px 0 20px;
+    color: #07182d;
+}
+
+
+.materials-intro {
+    max-width: 620px;
+    margin: 0;
+
+    color: #5d6670;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MATERIAL BOARD GRID
+   ========================================================= */
+
+.materials-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   MATERIAL BOARD
+   ========================================================= */
+
+.material-panel {
+    position: relative;
+
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #07182d;
+
+    border: 1px solid rgba(7, 24, 45, .10);
+
+    box-shadow:
+        0 14px 35px rgba(7, 24, 45, .08);
+}
+
+
+/* Exterior takes the full first row */
+
+.material-feature {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.material-panel img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background: #07182d;
+
+    transition:
+        transform .45s ease;
+}
+
+
+.material-panel:hover img {
+    transform: scale(1.005);
+}
+
+
+/* =========================================================
+   REMOVE OLD PHOTO OVERLAY
+   ========================================================= */
+
+.material-panel::after {
+    display: none;
+}
+
+
+/* These boards already contain their own titles/text */
+
+.material-caption {
+    display: none;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1500px) {
+
+    .materials-grid {
+        gap: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .material-feature {
+        grid-column: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .materials-heading {
+        margin-bottom: 32px;
+    }
+
+
+    .materials-intro {
+        font-size: 13px;
+    }
+
+
+    .materials-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .material-panel img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   ARABIC
+   ========================================================= */
+
+html[dir="rtl"] .materials-heading {
+    margin-left: auto;
+    text-align: right;
+}
+
+/* =========================================================
+   MATERIALS VISIBILITY FIX
+   ========================================================= */
+
+.materials-section .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* =========================================================
+   FINAL BILINGUAL / RESPONSIVE POLISH
+   ========================================================= */
+
+html[dir="rtl"] body {
+    text-align: right;
+}
+
+html[dir="rtl"] #home h1,
+html[dir="rtl"] #home h1 span,
+html[dir="rtl"] #home h1 em {
+    font-family: "Noto Kufi Arabic", sans-serif !important;
+    font-style: normal !important;
+    letter-spacing: 0 !important;
+    line-height: 1.35 !important;
+}
+
+html[dir="rtl"] #home .eyebrow,
+html[dir="rtl"] #home .hero-lead,
+html[dir="rtl"] #home .btn {
+    font-family: "Noto Kufi Arabic", sans-serif !important;
+    letter-spacing: 0 !important;
+}
+
+html[dir="rtl"] .gallery-heading,
+html[dir="rtl"] .gallery-filters,
+html[dir="rtl"] .materials-heading,
+html[dir="rtl"] .floorplans-heading,
+html[dir="rtl"] .contact-copy {
+    text-align: right;
+}
+
+html[dir="rtl"] .gallery-filters {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .gallery-filter,
+html[dir="rtl"] .floorplan-tab,
+html[dir="rtl"] .spec-item span,
+html[dir="rtl"] .contact-form label {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .floorplans-caption h3,
+html[dir="rtl"] .gallery-heading h2,
+html[dir="rtl"] .materials-heading h2,
+html[dir="rtl"] .contact-copy h2,
+html[dir="rtl"] .lifestyle-card-copy h3,
+html[dir="rtl"] .lifestyle-feature-copy h3 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .sales-contact > a:not(.text-link) {
+    direction: ltr;
+    text-align: right;
+    margin-left: auto;
+}
+
+html[dir="rtl"] .sales-contact .text-link {
+    margin-left: auto;
+}
+
+html[dir="rtl"] .footer-brand,
+html[dir="rtl"] .footer-links {
+    direction: rtl;
+}
+
+html[dir="rtl"] .footer-brand strong,
+html[dir="rtl"] .footer-brand small {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    letter-spacing: 0;
+}
+
+/* The facilities artwork contains embedded English text.
+   If assets/facilities-full-ar.jpg is later added, script.js swaps to it automatically. */
+
+@media (max-width: 1200px) {
+    .desktop-nav {
+        gap: 22px;
+        font-size: 10px;
+    }
+
+    .site-header {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    html[dir="rtl"] .mobile-menu {
+        text-align: right;
+        font-family: "Noto Kufi Arabic", sans-serif;
+    }
+
+    .materials-section .material-panel {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    #home.hero {
+        min-height: 700px !important;
+    }
+
+    html[dir="rtl"] #home h1 {
+        font-size: 40px !important;
+        line-height: 1.35 !important;
+    }
+
+    .gallery-filters {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+        scrollbar-width: thin;
+    }
+
+    .gallery-filter {
+        flex: 0 0 auto;
+    }
+
+    .floorplans-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+    }
+
+    .floorplan-tab {
+        flex: 0 0 auto;
+    }
+
+    .sales-contact > a:not(.text-link) {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* =========================================================
+   MOBILE HERO - KEEP FULL ENTRANCE PHOTO
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 100vh !important;
+        height: auto !important;
+        background: #06182c !important;
+        overflow: hidden !important;
+        padding-top: 72px !important;
+    }
+
+    .hero-bg {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        height: auto !important;
+
+        object-fit: contain !important;
+        object-position: center !important;
+
+        display: block !important;
+    }
+
+    .hero-overlay {
+        display: none !important;
+    }
+
+    .hero-content {
+        position: relative !important;
+        left: auto !important;
+        bottom: auto !important;
+
+        width: auto !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 36px 24px 48px !important;
+    }
+
+    .hero h1 {
+        font-size: 46px !important;
+        line-height: .95 !important;
+    }
+}
